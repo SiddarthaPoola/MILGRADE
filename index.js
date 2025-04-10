@@ -846,5 +846,5 @@ server.listen(HTTP_PORT, "0.0.0.0", () => {
   console.log(`Server running at http://${ipAddress}:${HTTP_PORT}`);
 
   // Open the web page in the default browser (on PC)
-  opn(`http://${ipAddress}:${HTTP_PORT}`);
+ // opn(`http://${ipAddress}:${HTTP_PORT}`);
 });
