@@ -601,13 +601,14 @@
     // const HTTP_PORT= HTTP_PORT;
     // console.log(HTTP_PORT)
     //const socket = io(`http://${ipAddress}:${HTTP_PORT}`); // Connect to the backend
-//     const HTTP_PORT = 3000;
+//     const HTTP_PORT = 3000; this 1
 
 // // Dynamically get the IP address of the server
 // const socket = io(`http://${window.location.hostname}:${HTTP_PORT}`);
-const socket = io(); // Automatically connects to the same origin
+//const socket = io(); this 2 render // Automatically connects to the same origin
+const socket = io(window.location.origin);
 
-// const socket = io("http://localhost:3000");
+// const socket = io("http://localhost:3000"); this 1
 
     // Validate IP address
     const validateIpAddress = (ip) => {
